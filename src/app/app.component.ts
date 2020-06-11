@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   //estilos específicos para este componente
 })
 export class AppComponent {
-  title = 'Angular Rocks';
+  title = 'Rock Bands';
 }
