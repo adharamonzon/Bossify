@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 //hay que importar todos nuestros componentes
 import { firstComponent } from './components/first-component/first-component.component';
 import { HeaderComponent } from './components/header/header.component';
+import { MainComponent } from './components/main/main.component';
 
 @NgModule({
   declarations: [
@@ -14,12 +15,10 @@ import { HeaderComponent } from './components/header/header.component';
     AppComponent,
     firstComponent,
     HeaderComponent,
+    MainComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent] //componente principal en el cual se va a cargar la aplicación
+  bootstrap: [AppComponent], //componente principal en el cual se va a cargar la aplicación
 })
-export class AppModule { }
+export class AppModule {}

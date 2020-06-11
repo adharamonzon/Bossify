@@ -1,2 +1,10 @@
-<ul>
-</ul>
+<main class="main">
+  <ul class="main__list">
+    <li class="main__list--item" *ngFor="let band of bands">
+      <h1 class="main__list--item__title">{{ band.name }}</h1>
+      <div class="main__list--item__img">
+        <img class="image" src="{{ band.image }}" />
+      </div>
+    </li>
+  </ul>
+</main>
