@@ -1,21 +1,32 @@
 .main {
   background-color: black;
   padding-top: 30px;
+  height: 100vh;
   &__list {
     display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    justify-items: center;
+    padding: 0;
     &--item {
       &__title {
         color: white;
         font-size: 20px;
         font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        text-decoration-line: overline;
+        text-align: center;
       }
       &__img {
         width: 300px;
+        align-items: center;
       }
     }
   }
 }
 .image {
   width: 100%;
+  min-height: 170px;
+  max-height: 170px;
+  border-radius: 10px;
+  margin: 0 auto;
 }
