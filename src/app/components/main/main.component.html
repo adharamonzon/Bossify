@@ -1,3 +1,4 @@
+<app-header></app-header>
 <main class="main">
   <ul class="main__list">
     <li class="main__list--item" *ngFor="let band of Mybands" id="{{ band.id }}">
@@ -5,6 +6,7 @@
       <div class="main__list--item__img">
         <img class="image" src="{{ band.image }}" />
       </div>
+      <a routerLink="/bandDetail">+ Info</a>
     </li>
   </ul>
 </main>

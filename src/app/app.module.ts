@@ -11,13 +11,13 @@ import { MainComponent } from './components/main/main.component';
 import { DetailComponent } from './components/detail/detail.component';
 
 const rutas: Routes = [
-  {
+  /* {
     path: '',
     //con el path vacío es necesario el pathMatch 'full'
     component: MainComponent,
     pathMatch: 'full',
-  },
-  { path: 'band-detail/:id', component: DetailComponent },
+  }, */
+  { path: 'bandDetail', component: DetailComponent },
 ];
 @NgModule({
   declarations: [
@@ -27,7 +27,7 @@ const rutas: Routes = [
     MainComponent,
     DetailComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(rutas, {})],
+  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(rutas, { useHash: true })],
   exports: [RouterModule],
   providers: [],
   bootstrap: [AppComponent], //componente principal en el cual se va a cargar la aplicación
