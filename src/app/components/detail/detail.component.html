@@ -1,10 +1,12 @@
-<article id="{{ id }}">
-  <a routerLink="/">Volver</a>
-  <h1 style="color: black;">{{ name }}</h1>
-  <img src="{{ image }}" alt="imagen de { name}" title="{ name}" />
-  <p style="color: black;">{{ description }}</p>
-  <ul>
-    Miembros de la banda:
-  </ul>
-  <li *ngFor="let member of bandMembers" style="color: black;">{{ member }}</li>
+<article class="band" id="{{ id }}">
+  <a class="link" routerLink="/">Volver</a>
+  <h1 class="band__name" style="color: black;">{{ name }}</h1>
+  <img class="band__img" src="{{ image }}" alt="imagen de { name}" title="{ name}" />
+  <p class="band__text" style="color: black;">{{ description }}</p>
+  <div class="band__member">
+    <ul class="band__memberlist">
+      Miembros de la banda:
+    </ul>
+    <li class="band__memberlist--member" *ngFor="let member of bandMembers" style="color: black;">{{ member }}</li>
+  </div>
 </article>

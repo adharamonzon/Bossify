@@ -1,25 +1,25 @@
-.header{
-  margin: 0;
-  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;  display: flex;
+.header {
+  margin-top: -10;
+  display: flex;
   justify-content: space-around;
   padding-top: 20px;
   background-color: black;
   color: white;
-  &__title{
+  &__title {
     font-size: 40px;
     margin: 0;
     padding-bottom: 15px;
   }
-  &__form{
+  &__form {
     width: 300px;
     display: flex;
     justify-content: space-evenly;
     height: 35px;
-    &--input{
+    &--input {
       border-radius: 10px;
       border: none;
     }
-    &--btn{
+    &--btn {
       border-radius: 10px;
       background-color: withe;
       width: 80px;
