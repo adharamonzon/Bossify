@@ -1,0 +1,48 @@
+.band {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__name {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  &__img {
+    width: 500px;
+    height: auto;
+    margin-bottom: 40px;
+  }
+  &__text {
+    width: 500px;
+    text-align: justify;
+  }
+  &__member {
+    position: absolute;
+    left: 60px;
+    top: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  &__memberlist {
+    font-size: 25px;
+    margin-bottom: 15px;
+    &--member {
+      margin-bottom: 10px;
+      list-style: none;
+      text-align: center;
+    }
+  }
+}
+.link {
+  color: black;
+  text-emphasis: none;
+  text-decoration: none;
+  border: 1px black solid;
+  border-radius: 10px;
+  align-self: flex-start;
+  margin-left: 200px;
+  padding: 10px 20px 10px 20px;
+}
