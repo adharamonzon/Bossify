@@ -10,15 +10,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { MainComponent } from './components/main/main.component';
 import { DetailComponent } from './components/detail/detail.component';
 
-const rutas: Routes = [
-  /* {
-    path: '',
-    //con el path vacío es necesario el pathMatch 'full'
-    component: MainComponent,
-    pathMatch: 'full',
-  }, */
-  { path: 'bandDetail', component: DetailComponent },
-];
+const routes: Routes = [{ path: 'bandDetail/:id', component: DetailComponent }];
+
 @NgModule({
   declarations: [
     //aquí se agregan los componentes y se puede usar en cualquier parte de la aplicación
@@ -27,7 +20,7 @@ const rutas: Routes = [
     MainComponent,
     DetailComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(rutas, { useHash: true })],
+  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(routes, { useHash: true })],
   exports: [RouterModule],
   providers: [],
   bootstrap: [AppComponent], //componente principal en el cual se va a cargar la aplicación

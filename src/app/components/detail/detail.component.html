@@ -1,10 +1,10 @@
-<article *ngFor="let band of Mybands" id="{{ band.id }}">
+<article id="{{ id }}">
   <a routerLink="/">Volver</a>
-  <h1 style="color: black;">{{ band.name }}</h1>
-  <img src="{{ band.image }}" alt="imagen de { band.name}" title="{ band.name}" />
-  <p style="color: black;">{{ band.description }}</p>
+  <h1 style="color: black;">{{ name }}</h1>
+  <img src="{{ image }}" alt="imagen de { name}" title="{ name}" />
+  <p style="color: black;">{{ description }}</p>
   <ul>
     Miembros de la banda:
   </ul>
-  <li *ngFor="let member of band.bandMembers" style="color: black;">{{ member }}</li>
+  <li *ngFor="let member of bandMembers" style="color: black;">{{ member }}</li>
 </article>
