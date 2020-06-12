@@ -3,16 +3,14 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
   public title: string;
 
   constructor() {
-    this.title = 'Rock Bands'
+    this.title = 'Rock Bands';
   }
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

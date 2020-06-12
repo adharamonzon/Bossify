@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import bands from '../bands';
 
 @Component({
   selector: 'app-detail',
@@ -6,12 +7,15 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./detail.component.css'],
 })
 export class DetailComponent implements OnInit {
+  public Mybands: Array<object>;
   @Input() name: string;
   @Input() img: string;
   @Input() description: string;
   @Input() bandMembers: Array<string>;
 
-  constructor() {}
+  constructor() {
+    this.Mybands = bands;
+  }
 
   ngOnInit(): void {}
 }

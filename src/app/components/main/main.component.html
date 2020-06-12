@@ -1,13 +1,10 @@
 <main class="main">
   <ul class="main__list">
-    <a routerLink="/band-detail">
-      <li class="main__list--item" *ngFor="let band of bands" (click)="onClick()">
-        <h1 class="main__list--item__title">{{ band.name }}</h1>
-        <div class="main__list--item__img">
-          <img class="image" src="{{ band.image }}" />
-        </div>
-        <app-detail style="display: none;" [name]="band.name" [img]="band.image" [description]="band.description" [bandMembers]="[band.bandMembers]"></app-detail>
-      </li>
-    </a>
+    <li class="main__list--item" *ngFor="let band of Mybands" id="{{ band.id }}">
+      <h1 class="main__list--item__title">{{ band.name }}</h1>
+      <div class="main__list--item__img">
+        <img class="image" src="{{ band.image }}" />
+      </div>
+    </li>
   </ul>
 </main>
