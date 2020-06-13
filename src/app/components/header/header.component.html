@@ -1,7 +1,3 @@
 <header class="header">
   <h1 class="header__title">{{ title }}</h1>
-  <form class="header__form">
-    <input (keyup.enter)="filterByName($event)" (blur)="filterByName($event)" class="header__form--input" type="text" placeholder="Busca tu banda" />
-    <button class="header__form--btn" (click)="filterByName($event)" type="button">Buscar</button>
-  </form>
 </header>

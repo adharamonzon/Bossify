@@ -10,20 +10,5 @@
     margin: 0;
     padding-bottom: 15px;
   }
-  &__form {
-    width: 300px;
-    display: flex;
-    justify-content: space-evenly;
-    height: 35px;
-    &--input {
-      border-radius: 10px;
-      border: none;
-    }
-    &--btn {
-      border-radius: 10px;
-      background-color: withe;
-      width: 80px;
-      font-size: 15px;
-    }
-  }
+  
 }
