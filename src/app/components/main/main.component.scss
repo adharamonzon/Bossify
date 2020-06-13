@@ -8,15 +8,24 @@
     display: flex;
     justify-content: space-evenly;
     height: 35px;
+    margin-bottom: 30px;
+    position: relative;
+    left: 40%;
     &--input {
-      border-radius: 10px;
+      border-radius: 3px;
       border: none;
     }
     &--btn {
-      border-radius: 10px;
+      border-radius: 3px;
+      border: none;
       background-color: withe;
       width: 80px;
       font-size: 15px;
+    }
+    &--btn:hover {
+      background-color: rgb(59, 59, 59);
+      color: white;
+      transition: ease 1s;
     }
   }
 
@@ -45,8 +54,13 @@
       text-emphasis: none;
       text-decoration: none;
       border: solid 1px white;
-      border-radius: 10px;
+      border-radius: 3px;
       padding: 2px 5px 2px 5px;
+    }
+    &--linkToDetail:hover {
+      background-color: white;
+      color: black;
+      transition: ease 1s;
     }
   }
 }
@@ -54,6 +68,12 @@
   width: 100%;
   min-height: 170px;
   max-height: 170px;
-  border-radius: 10px;
   margin: 0 auto;
+  filter: gray;
+  filter: grayscale(100%);
+}
+.image:hover {
+  transition: ease 2s;
+  filter: none;
+  filter: grayscale(0%);
 }

@@ -11,7 +11,7 @@ const bands = [
     name: 'Led Zeppelin',
     description: 'Esta banda surgió a finales de los años 60 en el Reino Unido, la influencia del grupo Led Zeppelin es incalculable en la historia del rock. Su música trasciende cualquier etiqueta, incorporando a su base hard rock y a sus textos de influencia mística o mitológica heterogéneos sonidos que tanto se inspiraron en el blues como en el folk británico o en el funk. El cuarteto, representado por Peter Grant, debutó en directo en el mes de septiembre de 1968, cuando actuaron, por obligaciones contractuales previas, en la ciudad danesa de Copenhague. Han logrado vender más de 300 millones de copias alrededor del mundo',
     bandMembers: ['Robert Plant', 'Jimmy Page', 'John Paul Jones', 'John Bonham'],
-    image: '../../.././assets/images/led-zeppelin.jpg',
+    image: '../../.././assets/images/zeppelin.jpg',
   },
   {
     id: 3,
@@ -48,8 +48,16 @@ const bands = [
     id: 7,
     name: 'The Ramones',
     description: 'Ramones fue una banda de punk formada en Forest Hills, Estados Unidos en 1974 y disuelta en 1996. Pioneros y líderes del naciente punk,cimentaron las bases de este género musical con composiciones simples, minimalistas, repetitivas y letras muy simples o incluso sin sentido, en clara oposición a la pomposidad y la fastuosidad de las bandas que triunfaban en el mercado de los años 1970. Con sus largos solos de guitarra, las complejas canciones de rock progresivo y sus enigmáticas letras. Su sonido se caracteriza por ser rápido y directo, con influencias del rockabilly de los años 1950. Ramones lideró la primera ola del punk en Nueva York. publicaron 14 discos de estudio y varias recopilaciones y discos en directo, haciendo un total de 21 álbumes y un total de 212 canciones. A pesar de su fama actual, el grupo solo consiguió dos discos de oro gracias al recopilatorio Ramonesmania (1988) y su álbum debut en 2014, y únicamente dos de sus álbumes consiguieron sobrepasar el top 50 en el Billboard estadounidense',
-    bandMembers: ['Joey Ramone', 'Johnny Ramone', 'Dee Dee Ramone ', 'Tommy Ramone', 'Larry Van Kriedt'],
+    bandMembers: ['Joey Ramone', 'Johnny Ramone', 'Dee Dee Ramone ', 'Tommy Ramone'],
     image: '../../.././assets/images/ramones.jpg',
+  },
+  {
+    id: 8,
+    name: 'Kiss',
+    description:
+      'Kiss es una banda estadounidense de rock formada en Nueva York en enero de 1973. Conocidos por su maquillaje facial y sus extravagantes trajes, el grupo se dio a conocer al público a mediados de los años 1970 gracias a sus actuaciones en directo, en las que incluían pirotecnia, llamaradas, cañones, baterías elevadoras, guitarras con humo y sangre falsa.  El conjunto ha vendido más de 75 millones de álbumes en todo el mundo y veinticinco millones sólo en los Estados Unidos.  Desde su formación, los miembros de Kiss asumieron personalidades acordes con los maquillajes y vestimenta que llevaban, así Simmons asumió el rol de «Demon», Stanley el de «Starchild», Criss el de «Catman» y Frehley el de «Space Ace» o «Spaceman». Después de que cada miembro de la banda publicara un álbum en solitario y rodar una película, las tensiones dentro del grupo aumentaron, lo que ocasionó la marcha de Criss y posteriormente la de Frehley. Tras la salida de dos de sus miembros fundadores —Eric Carr y Vinnie Vincent reemplazaron a Criss y Frehley y asumieron las personalidades de «The Fox» y «The Wizard», respectivamente— y publicar algunos álbumes que no tuvieron el número de ventas esperadas. Kiss decidió abandonar el maquillaje y orientar su estilo musical hacia el glam metal. En la década de 1990 se produjo la reunión de la formación con sus respectivos maquillajes, aunque con la llegada del nuevo milenio, Frehley y Criss volvieron a dejar la banda. En 2014, los cuatro miembros originales —Simmons, Frehley, Stanley y Criss— volvieron a reunirse de manera esporádica para aceptar su ingreso en el Rock and Roll Hall of Fame.',
+    bandMembers: ['Gene Simmons', 'Paul Stanley', 'Tommy Thayer', 'Eric Singer'],
+    image: '../../.././assets/images/kiss.jpg',
   },
 ];
 

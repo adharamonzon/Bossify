@@ -20,8 +20,8 @@
   }
   &__member {
     position: absolute;
-    left: 60px;
-    top: 1100px;
+    left: 115px;
+    top: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -29,6 +29,7 @@
   &__memberlist {
     font-size: 25px;
     margin-bottom: 15px;
+
     &--member {
       margin-bottom: 10px;
       list-style: none;
@@ -45,4 +46,9 @@
   align-self: flex-start;
   margin-left: 200px;
   padding: 10px 20px 10px 20px;
+}
+.link:hover {
+  background-color: black;
+  color: white;
+  transition: ease 1s;
 }
