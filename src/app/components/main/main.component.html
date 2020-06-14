@@ -5,7 +5,7 @@
     <button class="main__form--btn" (click)="filterByName($event)" type="button">Buscar</button>
   </form>
   <div class="add-band">
-    <img (click)="showList()" class="add-band__image" src="../../../assets/icons/plus.svg" />
+    <img (click)="showList()" class="add-band__image" src="../../../assets/icons/plus.svg" alt="enseñar más grupos" title="más grupos" />
     <div class="add-band__container">
       <ul class="add-band__list">
         <li class="add-band__list--item" *ngFor="let band of moreBands">
@@ -18,10 +18,14 @@
   <ul class="main__list">
     <li class="main__list--item" *ngFor="let band of Mybands" id="{{ band.id }}">
       <h1 class="main__list--item__title">{{ band.name }}</h1>
-      <div class="main__list--item__img">
-        <img class="image" src="{{ band.image }}" />
+      <div class="main__list--item__img"><img class="image" src="{{ band.image }}" alt="{{ band.name }}" title="{{ band.name }}" /></div>
+      <div class="main__list--links">
+        <a class="main__list--links__linkToDetail" routerLink="/bandDetail/{{ band.id }}">+ Info</a>
+        <img (click)="findDeleteBand($event)" id="{{ band.id }}" class="main__list--links__delete" src="../../../assets/icons/trash.svg" alt="borrar banda" title="borrar banda" />
+
+        <!--         <p (click)="deleteBand($event)" id="{{ band.id }}" style="color: white;">borrar</p>
+ -->
       </div>
-      <a class="main__list--linkToDetail" routerLink="/bandDetail/{{ band.id }}">+ Info</a>
     </li>
   </ul>
 </main>

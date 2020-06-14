@@ -59,4 +59,25 @@ export class MainComponent implements OnInit {
     const bandPossition = moreBands.indexOf(newBand);
     moreBands.splice(bandPossition, 1);
   }
+  //findDeleteBand // esta función busca la banda que se quiere borrar, ejecuta la función de borrar y añadir a la lista de más bandas
+  findDeleteBand($event) {
+    let bandToDelete;
+    const deleteBandId = parseInt($event.toElement.id);
+    bands.findIndex((band) => {
+      if (band.id === deleteBandId) {
+        bandToDelete = band;
+      }
+    });
+    this.deleteBand(bandToDelete);
+    this.addBandToList(bandToDelete);
+  }
+  //deleteBand // borra la banda de la lista principal
+  deleteBand(bandToDelete) {
+    const bandPosition = bands.indexOf(bandToDelete);
+    bands.splice(bandToDelete, 1);
+  }
+  // addBandToList // añade la banda a la lista de más bandas
+  addBandToList(bandToDelete) {
+    moreBands.push(bandToDelete);
+  }
 }
