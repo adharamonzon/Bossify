@@ -48,18 +48,26 @@
         margin-bottom: 10px;
       }
     }
-    &--linkToDetail {
-      color: white;
-      text-emphasis: none;
-      text-decoration: none;
-      border: solid 1px white;
-      border-radius: 3px;
-      padding: 2px 5px 2px 5px;
-    }
-    &--linkToDetail:hover {
-      background-color: white;
-      color: black;
-      transition: ease 1s;
+    &--links {
+      display: flex;
+      justify-content: space-around;
+      &__linkToDetail {
+        color: white;
+        text-emphasis: none;
+        text-decoration: none;
+        border: solid 1px white;
+        border-radius: 3px;
+        padding: 2px 5px 2px 5px;
+      }
+      &__linkToDetail:hover {
+        background-color: white;
+        color: black;
+        transition: ease 1s;
+      }
+      &__delete {
+        width: 25px;
+        height: 25px;
+      }
     }
   }
 }
