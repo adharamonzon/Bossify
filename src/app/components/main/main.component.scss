@@ -27,7 +27,6 @@
       transition: ease 1s;
     }
   }
-
   &__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -79,11 +78,12 @@
 }
 .add-band {
   position: absolute;
-  top: 60px;
+  top: 40px;
   right: 55px;
   color: white;
   display: flex;
   flex-direction: column;
+  z-index: 9999;
   &__image {
     width: 50px;
     height: 50px;
@@ -94,6 +94,14 @@
     list-style: none;
     display: none;
     cursor: pointer;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 3px;
+
+    &--item {
+      margin-bottom: 3px;
+    }
   }
 }
 .show {
@@ -137,6 +145,14 @@
   }
 }
 @media all and (max-width: 370px) {
+  .add-band {
+    top: 45px;
+    right: 25px;
+    &__image {
+      width: 30px;
+      height: 30px;
+    }
+  }
   .main__list {
     grid-template-columns: 1fr;
   }
