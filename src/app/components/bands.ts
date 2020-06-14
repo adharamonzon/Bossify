@@ -60,7 +60,7 @@ const bands = [
     image: '../../.././assets/images/kiss.jpg',
   },
   {
-    id: 8,
+    id: 9,
     name: 'The Doors',
     description: 'The Doors fue una banda de rock estadounidense, formada en Los Ángeles (California), en julio del año 1965 y disuelta en el año 1973. Se convirtió en uno de los exponentes de la psicodelia de los años 1960. Aunque la carrera de The Doors terminó en 1973, su popularidad ha persistido. Han vendido 33 millones de unidades certificadas en los Estados Unidos. La banda ha vendido más de 100 millones de álbumes en todo el mundo. The Doors fue la primera banda estadounidense en acumular ocho discos de oro consecutivos',
     bandMembers: ['Jim Morrison', 'Ray Manzarek', 'John Densmore', 'Robby Krieger'],
