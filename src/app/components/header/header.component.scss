@@ -6,6 +6,13 @@
   background-color: black;
   color: white;
   &__logo {
-    width: 150px;
+    width: 160px;
+  }
+}
+
+@media all and (max-width: 790px) {
+  .header__logo {
+    position: relative;
+    top: 20px;
   }
 }
