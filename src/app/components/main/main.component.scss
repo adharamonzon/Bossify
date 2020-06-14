@@ -9,8 +9,7 @@
     justify-content: space-evenly;
     height: 35px;
     margin-bottom: 30px;
-    position: relative;
-    left: 40%;
+    margin-left: 50px;
     &--input {
       border-radius: 3px;
       border: none;
@@ -36,6 +35,7 @@
     justify-items: center;
     padding: 0;
     &--item {
+      list-style: none;
       &__title {
         color: white;
         font-size: 20px;
@@ -76,4 +76,47 @@
   transition: ease 2s;
   filter: none;
   filter: grayscale(0%);
+}
+
+@media all and (max-width: 1000px) {
+  .main {
+    &__list {
+      grid-template-columns: 1fr 1fr;
+      &--item__img {
+        width: 250px;
+      }
+    }
+  }
+}
+@media all and (max-width: 720px) {
+  .main {
+    &__list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+@media all and (max-width: 525px) {
+  .main__form {
+    width: 220px;
+    &--input {
+      width: 120px;
+      height: 25px;
+    }
+    &--btn {
+      width: 55px;
+      height: 25px;
+    }
+  }
+  .main__list--item__img {
+    width: 170px;
+  }
+  .image {
+    max-height: 120px;
+    min-height: 120px;
+  }
+}
+@media all and (max-width: 370px) {
+  .main__list {
+    grid-template-columns: 1fr;
+  }
 }
