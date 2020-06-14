@@ -4,24 +4,24 @@
     <input (keyup.enter)="filterByName($event)" (blur)="filterByName($event)" class="main__form--input" type="text" placeholder=" Busca tu banda" />
     <button class="main__form--btn" (click)="filterByName($event)" type="button">Buscar</button>
   </form>
+  <div class="add-band">
+    <img (click)="showList()" class="add-band__image" src="../../../assets/icons/plus.svg" />
+    <div class="add-band__container">
+      <ul class="add-band__list">
+        <li class="add-band__list--item" *ngFor="let band of moreBands">
+          <h4 (click)="addBand($event)" id="{{ band.id }}" class="add-band__list--item__name">{{ band.name }}</h4>
+        </li>
+      </ul>
+    </div>
+  </div>
+
   <ul class="main__list">
-    <ng-template [ngIf]="filterBands">
-      <li class="main__list--item" *ngFor="let band of Mybands" id="{{ band.id }}">
-        <h1 class="main__list--item__title">{{ band.name }}</h1>
-        <div class="main__list--item__img">
-          <img class="image" src="{{ band.image }}" />
-        </div>
-        <a class="main__list--linkToDetail" routerLink="/bandDetail/{{ band.id }}">+ Info</a>
-      </li>
-    </ng-template>
-    <ng-template #elseBlock>
-      <li class="main__list--item" *ngFor="let band of filterBands" id="{{ band.id }}">
-        <h1 class="main__list--item__title">{{ band.name }}</h1>
-        <div class="main__list--item__img">
-          <img class="image" src="{{ band.image }}" />
-        </div>
-        <a class="main__list--linkToDetail" routerLink="/bandDetail/{{ band.id }}">+ Info</a>
-      </li>
-    </ng-template>
+    <li class="main__list--item" *ngFor="let band of Mybands" id="{{ band.id }}">
+      <h1 class="main__list--item__title">{{ band.name }}</h1>
+      <div class="main__list--item__img">
+        <img class="image" src="{{ band.image }}" />
+      </div>
+      <a class="main__list--linkToDetail" routerLink="/bandDetail/{{ band.id }}">+ Info</a>
+    </li>
   </ul>
 </main>

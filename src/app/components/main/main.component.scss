@@ -77,7 +77,28 @@
   filter: none;
   filter: grayscale(0%);
 }
-
+.add-band {
+  position: absolute;
+  top: 60px;
+  right: 55px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  &__image {
+    width: 50px;
+    height: 50px;
+    align-self: flex-end;
+    margin-bottom: 10px;
+  }
+  &__list {
+    list-style: none;
+    display: none;
+    cursor: pointer;
+  }
+}
+.show {
+  display: block;
+}
 @media all and (max-width: 1000px) {
   .main {
     &__list {
