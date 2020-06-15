@@ -1,27 +1,21 @@
-# HelloWorld
+# Aplicación de web. Música de Rock Boosify
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+![imagen de la aplicación](./src/assets/images/foto-app.png)
 
-## Development server
+## Objetivo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+El objetivo es crear una aplicación web a través del framework Angular desarrollado en TypeScript que muestre bandas de rock de los años 70.
 
-## Code scaffolding
+Esta aplicación tiene varios requisitos:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Al abrir la aplicación debe aparecer un listado de bandas de rock. Al pinchar en cualquiera bde ellas debe de llevarte al detalle de cada banda con más información sobre sus miembros y su historia.
+- Es importante poder borrar las bandas que no te gusten y no quieras que aparezcan en tu lista.
+- Poder agregar otras bandas también del rock de los años 70.
 
-## Build
+## Instalación del proyecto
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Puedes clonarte el repositorio a través de este enlace, poniendo en la consola: **git clone https://github.com/adharamonzon/angular-rocks-adhara-monzon.git**
 
-## Running unit tests
+Después de haberlo clonado necesitas hacer npm install
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+El repositorio ya está clonado, he instalado y listo para poder usar, con el comando en consola **ng serve** para ejecutar el localhost.
