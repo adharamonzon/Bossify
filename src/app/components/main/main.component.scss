@@ -1,7 +1,6 @@
 .main {
   background-color: black;
   padding-bottom: 43px;
-  height: 110%;
   &__form {
     width: 300px;
     display: flex;
@@ -19,6 +18,7 @@
       background-color: withe;
       width: 80px;
       font-size: 15px;
+      cursor: pointer;
     }
     &--btn:hover {
       background-color: rgb(59, 59, 59);
@@ -66,6 +66,7 @@
       &__delete {
         width: 25px;
         height: 25px;
+        cursor: pointer;
       }
     }
   }
@@ -103,7 +104,6 @@
     cursor: pointer;
     background-color: white;
     color: black;
-    padding: 10px;
     border-radius: 3px;
 
     &--item {

@@ -17,6 +17,7 @@ export class DetailComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) {
     this.Mybands = bands;
+    // bucle para encontrar el id de la banda clicada con la banda en el array y enrutarlo
     for (const band of bands) {
       if (band.id === parseInt(this.route.snapshot.paramMap.get('id'))) {
         this.id = band.id;

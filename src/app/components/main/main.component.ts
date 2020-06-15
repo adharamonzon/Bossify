@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+//arrays donde se encuentra la información de todas las bandas
 import bands from '../bands';
 import moreBands from '../more-bands';
 

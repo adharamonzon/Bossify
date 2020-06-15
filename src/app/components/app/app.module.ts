@@ -5,16 +5,16 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-//hay que importar todos nuestros componentes
-import { HeaderComponent } from './components/header/header.component';
-import { MainComponent } from './components/main/main.component';
-import { DetailComponent } from './components/detail/detail.component';
+// importar todos mis componentes
+import { HeaderComponent } from '../header/header.component';
+import { MainComponent } from '../main/main.component';
+import { DetailComponent } from '../detail/detail.component';
 
 const routes: Routes = [{ path: 'bandDetail/:id', component: DetailComponent }];
 
 @NgModule({
   declarations: [
-    //aquí se agregan los componentes y se puede usar en cualquier parte de la aplicación
+    // se agregan los componentes y se puede usar en cualquier parte de la aplicación
     AppComponent,
     HeaderComponent,
     MainComponent,
