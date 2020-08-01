@@ -1,0 +1,23 @@
+.header {
+  margin-top: -10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 20px;
+  background-color: black;
+  color: white;
+}
+
+.header__logo {
+  width: 160px;
+}
+
+@media all and (max-width: 790px) {
+  .header__logo {
+    position: relative;
+    top: 20px;
+  }
+}
+/*# sourceMappingURL=header.component.css.map */

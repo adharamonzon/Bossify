@@ -15,7 +15,7 @@ Esta aplicación tiene varios requisitos:
 
 ## Instalación del proyecto
 
-Puedes clonarte el repositorio a través de este enlace, poniendo en la consola: **git clone https://github.com/adharamonzon/angular-rocks-adhara-monzon.git**
+Puedes clonarte el repositorio a través de este enlace, poniendo en la consola: **git clone https://github.com/adharamonzon/Bossify.git**
 
 Después de haberlo clonado necesitas hacer **npm install**
 
